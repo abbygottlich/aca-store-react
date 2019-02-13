@@ -1,2 +1,2 @@
-ReactDOM.render(<App />,
+ReactDOM.render(<App products={state.products} />,
     document.getElementById("root"));
