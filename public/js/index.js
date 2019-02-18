@@ -1,2 +1,2 @@
-ReactDOM.render(<App products={state.products} />,
+ReactDOM.render(<App numberOfItemsInCart={state.numberOfItemsInCart} products={state.products} />,
     document.getElementById("root"));

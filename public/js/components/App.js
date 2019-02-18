@@ -1,6 +1,11 @@
 function App(props) {
+
+    const productDetails = props.products.map((p, i) => {
+        return <ProductDetail key={i} products={p} />
+    });
+
     return <div className="App">
-        <Header />
+        <Header numberOfItemsInCart={props.numberOfItemsInCart} />
         <div className="container">
             <div className="row">
                 <div className="col-md-3">
@@ -14,7 +19,7 @@ function App(props) {
                 <div className="col-md-9">
                     <Carousel />
                     <div className="row">
-                        <ProductDetail />
+                        {productDetails}
                     </div>
                 </div>
             </div>
