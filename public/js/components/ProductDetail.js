@@ -21,7 +21,7 @@ function ProductDetail(props) {
                 </p>
             </div>
             <button onClick={() => {
-                props.addToCart()
+                props.addToCart(props.products)
             }}>Add To Cart</button>
         </div>
     </div>
