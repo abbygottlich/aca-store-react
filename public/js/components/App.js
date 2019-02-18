@@ -1,7 +1,10 @@
 function App(props) {
 
     const productDetails = props.products.map((p, i) => {
-        return <ProductDetail key={i} products={p} />
+        return <ProductDetail
+            addToCart={props.addToCart}
+            key={i}
+            products={p} />
     });
 
     return <div className="App">

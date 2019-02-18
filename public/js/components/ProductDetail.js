@@ -20,6 +20,9 @@ function ProductDetail(props) {
                     {star}
                 </p>
             </div>
+            <button onClick={() => {
+                props.addToCart()
+            }}>Add To Cart</button>
         </div>
     </div>
 };
